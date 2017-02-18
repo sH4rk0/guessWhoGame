@@ -1,0 +1,853 @@
+// JavaScript Document
+var profiles = [
+
+{
+	agency:"@HealthwareInternational",surname:"Bove",role:"",
+name:"Annadina",
+	picture:"assets/images/profiles/1_annadina.jpg",
+	profile:{
+	grey:false,strategy:false,content:false,finance:false,developer:false,account:true,pm:false,art:false,eyegreen:true,foregroung:true,elsewhere:false,eyeblue:false,female:true,
+	glasses:false,
+	mustache:false,
+	earrings:false,
+	beard:false,
+	smile:true,blonde:false,brown:true,red:false,black:false,bald:false
+	}
+},
+{
+	agency:"@HealthwareInternational",surname:"Quattrucci",role:"Project Manager",
+name:"Valentina",
+	picture:"assets/images/profiles/37_valentina.jpg",
+	profile:{
+	grey:false,strategy:false,content:false,finance:false,developer:false,account:false,pm:true,art:false,eyegreen:false,foregroung:true,elsewhere:false,eyeblue:true,female:true,
+	glasses:false,
+	mustache:false,
+	earrings:false,
+	beard:false,
+	smile:true,blonde:false,brown:true,red:false,black:false,bald:false}	
+},
+
+{
+	agency:"@HealthwareInternational",surname:"Pannella",role:"Marketing & External Relations",
+name:"Antonietta",
+	picture:"assets/images/profiles/2_antonietta.jpg",
+	profile:{
+	grey:false,strategy:false,content:false,finance:false,developer:false,account:false,pm:false,art:false,eyegreen:false,foregroung:false,elsewhere:false,eyeblue:false,female:true,
+	glasses:false,
+	mustache:false,
+	earrings:true,
+	beard:false,
+	smile:true,blonde:true,brown:false,red:false,black:false,bald:false}	
+},
+{
+	agency:"@HealthwareInternational",surname:"Marinelli",role:"System Administrator Senior",
+name:"Carlo",
+	picture:"assets/images/profiles/3_carlo.jpg",
+	profile:{
+	grey:false,strategy:false,content:false,finance:false,developer:false,account:false,pm:false,art:false,eyegreen:false,foregroung:true,elsewhere:false,eyeblue:false,female:false,
+	glasses:false,
+	mustache:true,
+	earrings:false,
+	beard:true,
+	smile:true,blonde:false,brown:true,red:false,black:false,bald:true}	
+},
+{
+	agency:"@HealthwareInternational",surname:"D'Ambrosio",role:"",
+name:"Liana",
+	picture:"assets/images/profiles/4_liana.jpg",
+	profile:{
+	grey:false,strategy:false,content:false,finance:false,developer:false,account:true,pm:false,art:false,eyegreen:false,foregroung:false,elsewhere:false,eyeblue:false,female:true,
+	glasses:false,
+	mustache:false,
+	earrings:false,
+	beard:false,
+	smile:true,blonde:false,brown:false,red:false,black:true,bald:false}	
+},
+
+{
+	agency:"@HealthwareInternational",surname:"Palladino",role:"Director of Delivery",
+name:"Rosy",
+	picture:"assets/images/profiles/5_rosy.jpg",
+	profile:{
+	grey:false,strategy:false,content:false,finance:false,developer:false,account:false,pm:true,art:false,eyegreen:false,foregroung:false,elsewhere:false,eyeblue:false,female:true,
+	glasses:false,
+	mustache:false,
+	earrings:true,
+	beard:false,
+	smile:true,blonde:false,brown:true,red:false,black:false,bald:false}	
+},
+{
+	agency:"@HealthwareInternational",surname:"Pirofalo",role:"",
+name:"Elena",
+	picture:"assets/images/profiles/6_elena.jpg",
+	profile:{
+	grey:false,strategy:false,content:false,finance:false,developer:false,account:false,pm:false,art:false,eyegreen:false,foregroung:false,elsewhere:false,eyeblue:false,female:true,
+	glasses:false,
+	mustache:false,
+	earrings:false,
+	beard:false,
+	smile:true,blonde:true,brown:false,red:false,black:false,bald:false}	
+},
+{
+	agency:"@HealthwareInternational",surname:"D'Amelia",role:"Group Account Director",
+name:"Michela",
+	picture:"assets/images/profiles/7_michela.jpg",
+	profile:{
+	grey:false,strategy:false,content:false,finance:false,developer:false,account:true,pm:false,art:false,eyegreen:false,foregroung:true,elsewhere:false,eyeblue:false,female:true,
+	glasses:false,
+	mustache:false,
+	earrings:false,
+	beard:false,
+	smile:true,blonde:false,brown:false,red:false,black:true,bald:false}	
+},
+{
+	agency:"@HealthwareInternational",surname:"Anfuso",role:"",
+name:"Gianni",
+	picture:"assets/images/profiles/8_gianni.jpg",
+	profile:{
+	grey:false,strategy:false,content:false,finance:false,developer:true,account:false,pm:false,art:false,eyegreen:false,foregroung:true,elsewhere:false,eyeblue:false,female:false,
+	glasses:false,
+	mustache:true,
+	earrings:false,
+	beard:true,
+	smile:false,blonde:false,brown:false,red:false,black:false,bald:true}	
+},
+{
+	agency:"@HealthwareInternational",surname:"De Luca",role:"Content Strategist",
+name:"Melania",
+	picture:"assets/images/profiles/9_melania.jpg",
+	profile:{
+	grey:false,strategy:false,content:true,finance:false,developer:false,account:false,pm:false,art:false,eyegreen:false,foregroung:true,elsewhere:false,eyeblue:false,female:true,
+	glasses:false,
+	mustache:false,
+	earrings:true,
+	beard:false,
+	smile:true,blonde:false,brown:false,red:false,black:true,bald:false}	
+},
+{
+	agency:"@HealthwareInternational",surname:"Labruna",role:"",
+name:"Tiziana",
+	picture:"assets/images/profiles/10_tiziana.jpg",
+	profile:{
+	grey:false,strategy:false,content:false,finance:false,developer:false,account:false,pm:false,art:false,eyegreen:false,foregroung:false,elsewhere:false,eyeblue:false,female:true,
+	glasses:false,
+	mustache:false,
+	earrings:false,
+	beard:false,
+	smile:true,blonde:false,brown:true,red:false,black:false,bald:false}	
+},
+{
+	agency:"@HealthwareInternational",surname:"Marafioti",role:"",
+name:"Joe",
+	picture:"assets/images/profiles/11_joe.jpg",
+	profile:{
+	grey:false,strategy:false,content:false,finance:false,developer:false,account:false,pm:false,art:false,eyegreen:false,foregroung:false,elsewhere:false,eyeblue:false,female:false,
+	glasses:true,
+	mustache:false,
+	earrings:false,
+	beard:false,
+	smile:true,blonde:false,brown:false,red:false,black:false,bald:true}	
+},
+{
+	agency:"@HealthwareInternational",surname:"Roberto",role:"",
+name:"Luca",
+	picture:"assets/images/profiles/12_luca.jpg",
+	profile:{
+	grey:false,strategy:false,content:false,finance:false,developer:true,account:false,pm:false,art:false,eyegreen:false,foregroung:true,elsewhere:false,eyeblue:true,female:false,
+	glasses:false,
+	mustache:false,
+	earrings:false,
+	beard:false,
+	smile:false,blonde:false,brown:true,red:false,black:false,bald:false}	
+},
+{
+	agency:"@HealthwareInternational",surname:"Mari",role:"Senior Technical Architect",
+name:"Lino",
+	picture:"assets/images/profiles/13_lino.jpg",
+	profile:{
+	grey:false,strategy:false,content:false,finance:false,developer:true,account:false,pm:false,art:false,eyegreen:false,foregroung:false,elsewhere:true,eyeblue:false,female:false,
+	glasses:false,
+	mustache:false,
+	earrings:false,
+	beard:false,
+	smile:true,blonde:false,brown:false,red:false,black:true,bald:false}	
+},
+{
+	agency:"@HealthwareInternational",surname:"Scala",role:"",
+name:"Ferdinando",
+	picture:"assets/images/profiles/14_ferdinando.jpg",
+	profile:{
+	grey:false,strategy:true,content:false,finance:false,developer:false,account:false,pm:false,art:false,eyegreen:false,foregroung:true,elsewhere:false,eyeblue:false,female:false,
+	glasses:false,
+	mustache:false,
+	earrings:false,
+	beard:false,
+	smile:true,blonde:false,brown:false,red:false,black:true,bald:false}	
+},
+{
+	agency:"@HealthwareInternational",surname:"Pantalena",role:"IT & IS Manager",
+name:"Daniele",
+	picture:"assets/images/profiles/15_daniele.jpg",
+	profile:{
+	grey:false,strategy:false,content:false,finance:false,developer:false,account:false,pm:false,art:false,eyegreen:false,foregroung:false,elsewhere:false,eyeblue:false,female:false,
+	glasses:false,
+	mustache:false,
+	earrings:false,
+	beard:false,
+	smile:false,blonde:false,brown:false,red:false,black:true,bald:false}	
+},
+{
+	agency:"@HealthwareInternational",surname:"Casella",role:"",
+name:"Daniela",
+	picture:"assets/images/profiles/16_daniela.jpg",
+	profile:{
+	grey:false,strategy:false,content:false,finance:false,developer:true,account:false,pm:false,art:false,eyegreen:false,foregroung:true,elsewhere:false,eyeblue:false,female:true,
+	glasses:false,
+	mustache:false,
+	earrings:false,
+	beard:false,
+	smile:true,blonde:false,brown:true,red:false,black:false,bald:false}	
+},
+{
+	agency:"@HealthwareInternational",surname:"Fortini",role:"Account Coordinator",
+name:"Flaviana",
+	picture:"assets/images/profiles/17_flaviana.jpg",
+	profile:{
+	grey:false,strategy:false,content:true,finance:false,developer:false,account:true,pm:false,art:false,eyegreen:true,foregroung:false,elsewhere:false,eyeblue:false,female:true,
+	glasses:false,
+	mustache:false,
+	earrings:false,
+	beard:false,
+	smile:false,blonde:false,brown:true,red:false,black:false,bald:false}	
+},
+{
+	agency:"@HealthwareInternational",surname:"Ferrara",role:"",
+name:"Barbara",
+	picture:"assets/images/profiles/18_barbara.jpg",
+	profile:{
+	grey:false,strategy:false,content:false,finance:false,developer:false,account:false,pm:false,art:false,eyegreen:false,foregroung:true,elsewhere:false,eyeblue:false,female:true,
+	glasses:false,
+	mustache:false,
+	earrings:false,
+	beard:false,
+	smile:true,blonde:true,brown:false,red:false,black:false,bald:false}	
+},
+{
+	agency:"@HealthwareInternational",surname:"Fortini",role:"",
+name:"Fulvio",
+	picture:"assets/images/profiles/19_fulvio.jpg",
+	profile:{
+	grey:false,strategy:false,content:false,finance:false,developer:false,account:false,pm:false,art:false,eyegreen:true,foregroung:true,elsewhere:false,eyeblue:false,female:false,
+	glasses:false,
+	mustache:false,
+	earrings:false,
+	beard:false,
+	smile:true,blonde:false,brown:false,red:false,black:true,bald:false}	
+},
+{
+	agency:"@HealthwareInternational",surname:"Wenzel",role:"",
+name:"Annegret",
+	picture:"assets/images/profiles/20_annegret.jpg",
+	profile:{
+	grey:false,strategy:false,content:true,finance:false,developer:false,account:false,pm:false,art:false,eyegreen:false,foregroung:true,elsewhere:false,eyeblue:true,female:true,
+	glasses:false,
+	mustache:false,
+	earrings:false,
+	beard:false,
+	smile:false,blonde:false,brown:true,red:false,black:false,bald:false}	
+},
+{
+	agency:"@HealthwareInternational",surname:"Villani",role:"",
+name:"Ivana",
+	picture:"assets/images/profiles/21_ivana.jpg",
+	profile:{
+	grey:false,strategy:false,content:false,finance:false,developer:true,account:false,pm:false,art:false,eyegreen:false,foregroung:false,elsewhere:false,eyeblue:false,female:true,
+	glasses:false,
+	mustache:false,
+	earrings:false,
+	beard:false,
+	smile:true,blonde:false,brown:false,red:false,black:true,bald:false}	
+},
+{
+	agency:"@HealthwareInternational",surname:"Spacagna",role:"Senior Technical Architect",
+name:"Fabio",
+	picture:"assets/images/profiles/22_fabio.jpg",
+	profile:{
+	grey:false,strategy:false,content:false,finance:false,developer:true,account:false,pm:false,art:false,eyegreen:false,foregroung:true,elsewhere:false,eyeblue:false,female:false,
+	glasses:false,
+	mustache:true,
+	earrings:false,
+	beard:true,
+	smile:false,blonde:false,brown:false,red:false,black:true,bald:false}	
+},
+{
+	agency:"@HealthwareInternational",surname:"Santoro",role:"",
+name:"Valter",
+	picture:"assets/images/profiles/23_valter.jpg",
+	profile:{
+	grey:false,strategy:false,content:false,finance:false,developer:false,account:false,pm:true,art:false,eyegreen:false,foregroung:true,elsewhere:false,eyeblue:false,female:false,
+	glasses:false,
+	mustache:false,
+	earrings:false,
+	beard:false,
+	smile:false,blonde:false,brown:false,red:false,black:true,bald:false}	
+},
+{
+	agency:"@HealthwareInternational",surname:"Trezza",role:"",
+name:"Pietro",
+	picture:"assets/images/profiles/24_pietro.jpg",
+	profile:{
+	grey:false,strategy:false,content:false,finance:false,developer:true,account:false,pm:false,art:false,eyegreen:false,foregroung:false,elsewhere:false,eyeblue:false,female:false,
+	glasses:false,
+	mustache:true,
+	earrings:false,
+	beard:true,
+	smile:false,blonde:false,brown:true,red:false,black:false,bald:false}	
+},
+{
+	agency:"@HealthwareInternational",surname:"Pisapia",role:"",
+name:"Sara",
+	picture:"assets/images/profiles/25_sara.jpg",
+	profile:{
+	grey:false,strategy:false,content:false,finance:true,developer:false,account:false,pm:false,art:false,eyegreen:false,foregroung:true,elsewhere:true,eyeblue:false,female:true,
+	glasses:false,
+	mustache:false,
+	earrings:true,
+	beard:false,
+	smile:true,blonde:false,brown:false,red:false,black:true,bald:false}	
+},
+{
+	agency:"@HealthwareInternational",surname:"Spera",role:"",
+name:"Gianni",
+	picture:"assets/images/profiles/26_gianni.jpg",
+	profile:{
+	grey:false,strategy:false,content:false,finance:false,developer:true,account:false,pm:false,art:false,eyegreen:false,foregroung:true,elsewhere:false,eyeblue:false,female:false,
+	glasses:true,
+	mustache:true,
+	earrings:false,
+	beard:true,
+	smile:false,blonde:false,brown:false,red:false,black:true,bald:false}	
+},
+{
+	agency:"@HealthwareInternational",surname:"Paraggio",role:"",
+name:"Andrea",
+	picture:"assets/images/profiles/27_andrea.jpg",
+	profile:{
+	grey:false,strategy:false,content:false,finance:false,developer:false,account:false,pm:false,art:true,eyegreen:false,foregroung:true,elsewhere:true,eyeblue:false,female:false,
+	glasses:false,
+	mustache:true,
+	earrings:false,
+	beard:true,
+	smile:true,blonde:false,brown:false,red:false,black:true,bald:false}	
+},
+{
+	agency:"@HealthwareInternational",surname:"DeSimone",role:"",
+name:"Alfredo",
+	picture:"assets/images/profiles/28_alfredo.jpg",
+	profile:{
+	grey:false,strategy:false,content:false,finance:false,developer:false,account:false,pm:false,art:true,eyegreen:false,foregroung:false,elsewhere:true,eyeblue:true,female:false,
+	glasses:false,
+	mustache:true,
+	earrings:false,
+	beard:true,
+	smile:false,blonde:false,brown:false,red:true,black:false,bald:false}	
+},
+{
+	agency:"@Paginemediche",surname:"Iagulli",role:"",
+name:"Pierpaolo",
+	picture:"assets/images/profiles/29_pierpaolo.jpg",
+	profile:{
+	grey:false,strategy:false,content:false,finance:false,developer:false,account:false,pm:true,art:false,eyegreen:false,foregroung:false,elsewhere:true,eyeblue:false,female:false,
+	glasses:false,
+	mustache:true,
+	earrings:false,
+	beard:true,
+	smile:true,blonde:false,brown:false,red:false,black:true,bald:false}	
+},
+{
+	agency:"@Esense ventures",surname:"Bilotta",role:"",
+name:"Graziella",
+	picture:"assets/images/profiles/30_graziella.jpg",
+	profile:{
+	grey:false,strategy:false,content:false,finance:false,developer:false,account:false,pm:false,art:false,eyegreen:false,foregroung:true,elsewhere:true,eyeblue:false,female:true,
+	glasses:false,
+	mustache:false,
+	earrings:true,
+	beard:false,
+	smile:true,blonde:false,brown:false,red:true,black:false,bald:false}	
+},
+{
+	agency:"@HealthTouch",surname:"Vento",role:"",
+name:"Giulia",
+	picture:"assets/images/profiles/31_giulia.jpg",
+	profile:{
+	grey:false,strategy:false,content:false,finance:false,developer:false,account:true,pm:false,art:false,eyegreen:false,foregroung:true,elsewhere:false,eyeblue:true,female:true,
+	glasses:false,
+	mustache:false,
+	earrings:false,
+	beard:false,
+	smile:true,blonde:true,brown:false,red:false,black:false,bald:false}	
+},
+{
+	agency:"@HealthTouch",surname:"Sarnà",role:"",
+name:"Francesco",
+	picture:"assets/images/profiles/32_francesco.jpg",
+	profile:{
+	grey:false,strategy:false,content:false,finance:false,developer:false,account:false,pm:false,art:true,eyegreen:false,foregroung:true,elsewhere:false,eyeblue:false,female:false,
+	glasses:false,
+	mustache:false,
+	earrings:true,
+	beard:false,
+	smile:true,blonde:false,brown:false,red:false,black:true,bald:false}	
+},
+{
+	agency:"@Videum",surname:"Scarpinati",role:"Project & Content Manager",
+name:"Sara",
+	picture:"assets/images/profiles/33_sara.jpg",
+	profile:{
+	grey:false,strategy:false,content:false,finance:false,developer:false,account:false,pm:false,art:false,eyegreen:false,foregroung:true,elsewhere:true,eyeblue:false,female:true,
+	glasses:true,
+	mustache:false,
+	earrings:false,
+	beard:false,
+	smile:false,blonde:false,brown:false,red:true,black:false,bald:false}	
+},
+{
+	agency:"@HealthTouch",surname:"Meo",role:"",
+name:"Vincenzo",
+	picture:"assets/images/profiles/34_vincenzo.jpg",
+	profile:{
+	grey:false,strategy:false,content:false,finance:false,developer:false,account:false,pm:false,art:true,eyegreen:false,foregroung:true,elsewhere:false,eyeblue:true,female:false,
+	glasses:false,
+	mustache:true,
+	earrings:false,
+	beard:true,
+	smile:true,blonde:false,brown:false,red:false,black:false,bald:true}	
+},
+{
+	agency:"@HealthTouch",surname:"Finelli",role:"",
+name:"Erminio",
+	picture:"assets/images/profiles/35_erminio.jpg",
+	profile:{
+	grey:false,strategy:false,content:false,finance:false,developer:true,account:false,pm:false,art:false,eyegreen:false,foregroung:false,elsewhere:false,eyeblue:true,female:false,
+	glasses:true,
+	mustache:false,
+	earrings:false,
+	beard:false,
+	smile:false,blonde:false,brown:false,red:false,black:false,bald:true}	
+},
+{
+	agency:"@Paginemediche",surname:"Arminante",role:"",
+name:"Antonella",
+	picture:"assets/images/profiles/36_antonella.jpg",
+	profile:{
+	grey:false,strategy:false,content:false,finance:false,developer:false,account:true,pm:false,art:false,eyegreen:false,foregroung:true,elsewhere:false,eyeblue:false,female:true,
+	glasses:false,
+	mustache:false,
+	earrings:true,
+	beard:false,
+	smile:true,blonde:false,brown:false,red:true,black:false,bald:false}	
+},
+{
+	agency:"@Esense ventures",surname:"Vinci",role:"",
+name:"Leo",
+	picture:"assets/images/profiles/38_leo.jpg",
+	profile:{
+	grey:false,strategy:false,content:false,finance:false,developer:false,account:false,pm:false,art:false,eyegreen:false,foregroung:true,elsewhere:false,eyeblue:false,female:false,
+	glasses:false,
+	mustache:false,
+	earrings:false,
+	beard:false,
+	smile:true,blonde:false,brown:false,red:false,black:false,bald:false}	
+},
+{
+	agency:"@HealthwareInternational",surname:"Raimondo",role:"Presenation Layer Architect",
+name:"Francesco",
+	picture:"assets/images/profiles/39_francesco.jpg",
+	profile:{
+	grey:false,strategy:false,content:false,finance:false,developer:true,account:false,pm:false,art:false,eyegreen:false,foregroung:true,elsewhere:true,eyeblue:false,female:false,
+	glasses:false,
+	mustache:true,
+	earrings:false,
+	beard:true,
+	smile:false,blonde:false,brown:true,red:false,black:false,bald:false}	
+},
+{
+	agency:"@HealthwareInternational",surname:"Ascione",role:"CEO",
+name:"Roberto",
+	picture:"assets/images/profiles/40_roberto.jpg",
+	profile:{
+	grey:false,strategy:false,content:false,finance:false,developer:false,account:false,pm:false,art:false,eyegreen:false,foregroung:false,elsewhere:false,eyeblue:false,female:false,
+	glasses:false,
+	mustache:false,
+	earrings:false,
+	beard:false,
+	smile:true,blonde:false,brown:false,red:false,black:true,bald:false}	
+},
+{
+	agency:"@HealthwareInternational",surname:"Sabatino",role:"Account Manager",
+name:"Gabriele",
+	picture:"assets/images/profiles/41_gabriele.jpg",
+	profile:{
+	grey:false,strategy:false,content:false,finance:false,developer:false,account:true,pm:false,art:false,eyegreen:false,foregroung:true,elsewhere:true,eyeblue:false,female:false,
+	glasses:false,
+	mustache:true,
+	earrings:false,
+	beard:true,
+	smile:true,blonde:false,brown:true,red:false,black:false,bald:false}	
+},
+
+{
+	agency:"@HealthwareInternational",surname:"Gualdi",role:"",
+name:"Francesca",
+	picture:"assets/images/profiles/42_francesca.jpg",
+	profile:{
+	grey:false,strategy:false,content:false,finance:false,developer:false,account:true,pm:false,art:false,eyegreen:false,foregroung:true,elsewhere:false,eyeblue:false,female:true,
+	glasses:false,
+	mustache:false,
+	earrings:false,
+	beard:true,
+	smile:true,blonde:false,brown:true,red:true,black:false,bald:false}	
+},
+
+{
+	agency:"@HealthwareInternational",surname:"Domizi",role:"",
+name:"Chiara",
+	picture:"assets/images/profiles/43_chiara.jpg",
+	profile:{
+	grey:false,strategy:false,content:false,finance:false,developer:false,account:true,pm:false,art:false,eyegreen:false,foregroung:true,elsewhere:true,eyeblue:false,female:true,
+	glasses:false,
+	mustache:false,
+	earrings:false,
+	beard:true,
+	smile:true,blonde:false,brown:false,red:true,black:false,bald:false}	
+},
+
+{
+	agency:"@HealthwareInternational",surname:"Miconi",role:"Account Manager",
+name:"Roberta",
+	picture:"assets/images/profiles/44_roberta.jpg",
+	profile:{
+	grey:false,strategy:false,content:false,finance:false,developer:false,account:true,pm:false,art:false,eyegreen:false,foregroung:false,elsewhere:false,eyeblue:false,female:true,
+	glasses:false,
+	mustache:false,
+	earrings:false,
+	beard:false,
+	smile:false,blonde:false,brown:true,red:false,black:false,bald:false}	
+},
+
+{
+	agency:"@HealthwareInternational",surname:"Nardone",role:"Account Manager",
+name:"Manuela",
+	picture:"assets/images/profiles/45_manuela.jpg",
+	profile:{
+	grey:false,strategy:false,content:false,finance:false,developer:false,account:true,pm:false,art:false,eyegreen:false,foregroung:false,elsewhere:false,eyeblue:false,female:true,
+	glasses:false,
+	mustache:false,
+	earrings:false,
+	beard:false,
+	smile:true,blonde:false,brown:false,red:true,black:false,bald:false}	
+},
+{
+	agency:"@HealthwareInternational",surname:"Fortini",role:"",
+name:"Fabrizio",
+	picture:"assets/images/profiles/46_fabrizio.jpg",
+	profile:{
+	grey:false,strategy:false,content:false,finance:false,developer:false,account:false,pm:true,art:false,eyegreen:true,foregroung:false,elsewhere:false,eyeblue:false,female:false,
+	glasses:false,
+	mustache:false,
+	earrings:false,
+	beard:false,
+	smile:false,blonde:false,brown:true,red:false,black:false,bald:false}	
+},
+{
+	agency:"@HealthwareInternational",surname:"Raimondo",role:"",
+name:"Anna",
+	picture:"assets/images/profiles/47_anna.jpg",
+	profile:{
+	grey:false,strategy:false,content:false,finance:true,developer:false,account:false,pm:false,art:false,eyegreen:false,foregroung:false,elsewhere:false,eyeblue:false,female:true,
+	glasses:true,
+	mustache:false,
+	earrings:false,
+	beard:false,
+	smile:true,blonde:false,brown:true,red:false,black:false,bald:false}	
+},
+{
+	agency:"@HealthwareInternational",surname:"D'Amore",role:"",
+name:"Nicola",
+	picture:"assets/images/profiles/48_nicola.jpg",
+	profile:{
+	grey:false,strategy:false,content:false,finance:false,developer:true,account:false,pm:false,art:false,eyegreen:false,foregroung:true,elsewhere:true,eyeblue:false,female:false,
+	glasses:false,
+	mustache:true,
+	earrings:false,
+	beard:true,
+	smile:true,blonde:false,brown:false,red:false,black:false,bald:false}	
+},
+{
+	agency:"@HealthwareInternational",surname:"Petraglia",role:"Associate Experience Director",
+name:"Gianfranco",
+	picture:"assets/images/profiles/49_gianfranco.jpg",
+	profile:{
+	grey:false,strategy:false,content:false,finance:false,developer:false,account:false,pm:false,art:true,eyegreen:false,foregroung:false,elsewhere:false,eyeblue:false,female:false,
+	glasses:false,
+	mustache:false,
+	earrings:false,
+	beard:false,
+	smile:false,blonde:false,brown:false,red:false,black:false,bald:true}	
+},
+{
+	agency:"@HealthwareInternational",surname:"D'Amelia",role:"",
+name:"Alessandra",
+	picture:"assets/images/profiles/50_alessandra.jpg",
+	profile:{
+	grey:false,strategy:false,content:false,finance:false,developer:false,account:true,pm:false,art:false,eyegreen:false,foregroung:false,elsewhere:true,eyeblue:false,female:true,
+	glasses:false,
+	mustache:false,
+	earrings:false,
+	beard:false,
+	smile:true,blonde:false,brown:true,red:false,black:false,bald:false}	
+},
+{
+	agency:"@HealthTouch",surname:"Romano",role:"",
+name:"Vincenzo",
+	picture:"assets/images/profiles/51_vincenzo.jpg",
+	profile:{
+	grey:false,strategy:false,content:false,finance:false,developer:true,account:false,pm:false,art:false,eyegreen:false,foregroung:false,elsewhere:false,eyeblue:false,female:false,
+	glasses:true,
+	mustache:false,
+	earrings:false,
+	beard:false,
+	smile:false,blonde:false,brown:false,red:false,black:false,bald:true}	
+},
+{
+	agency:"@HealthTouch",surname:"Carroccio",role:"",
+name:"Antonio",
+	picture:"assets/images/profiles/52_antonio.jpg",
+	profile:{
+	grey:false,strategy:false,content:false,finance:false,developer:false,account:false,pm:false,art:true,eyegreen:false,foregroung:false,elsewhere:true,eyeblue:true,female:false,
+	glasses:false,
+	mustache:true,
+	earrings:false,
+	beard:true,
+	smile:false,blonde:false,brown:false,red:false,black:true,bald:false}	
+},
+{
+	agency:"@HealthwareInternational",surname:"Muccioli",role:"Technical Architect",
+name:"Davide",
+	picture:"assets/images/profiles/53_davide.jpg",
+	profile:{
+	grey:false,strategy:false,content:false,finance:false,developer:true,account:false,pm:false,art:false,eyegreen:false,foregroung:false,elsewhere:false,eyeblue:false,female:false,
+	glasses:true,
+	mustache:true,
+	earrings:false,
+	beard:true,
+	smile:true,blonde:false,brown:false,red:false,black:true,bald:false}	
+},
+{
+	agency:"@HealthwareInternational",surname:"Memoli",role:"Web Designer",
+name:"Christian",
+	picture:"assets/images/profiles/55_christian.jpg",
+	profile:{
+	grey:false,strategy:false,content:false,finance:false,developer:true,account:false,pm:false,art:false,eyegreen:false,foregroung:false,elsewhere:false,eyeblue:true,female:false,
+	glasses:false,
+	mustache:false,
+	earrings:false,
+	beard:false,
+	smile:true,blonde:false,brown:false,red:false,black:false,bald:true}	
+},
+{
+	agency:"@HealthwareInternational",surname:"Romano",role:"",
+name:"Pierdomenico",
+	picture:"assets/images/profiles/56_pierdomenico.jpg",
+	profile:{
+	grey:false,strategy:false,content:false,finance:false,developer:false,account:false,pm:true,art:false,eyegreen:false,foregroung:true,elsewhere:false,eyeblue:false,female:false,
+	glasses:true,
+	mustache:false,
+	earrings:false,
+	beard:false,
+	smile:true,blonde:false,brown:false,red:false,black:false,bald:true}	
+},
+{
+	agency:"@HealthwareInternational",surname:"Collina",role:"",
+name:"Roberta",
+	picture:"assets/images/profiles/57_roberta.jpg",
+	profile:{
+	grey:false,strategy:false,content:true,finance:false,developer:false,account:false,pm:false,art:false,eyegreen:false,foregroung:true,elsewhere:false,eyeblue:false,female:true,
+	glasses:false,
+	mustache:false,
+	earrings:true,
+	beard:false,
+	smile:true,blonde:false,brown:true,red:false,black:false,bald:false}
+},
+{
+	agency:"@HealthwareInternational",surname:"Ravot",role:"",
+name:"Elisabetta",
+	picture:"assets/images/profiles/58_elisabetta.jpg",
+	profile:{
+	grey:false,strategy:false,content:false,finance:false,developer:false,account:true,pm:false,art:false,eyegreen:true,foregroung:true,elsewhere:false,eyeblue:false,female:true,
+	glasses:false,
+	mustache:false,
+	earrings:true,
+	beard:false,
+	smile:true,blonde:true,brown:false,red:false,black:false,bald:false}
+},
+{
+	agency:"@HealthwareInternational",surname:"Zecchina",role:"",
+name:"Marica",
+	picture:"assets/images/profiles/59_marica.jpg",
+	profile:{
+	grey:false,strategy:false,content:true,finance:false,developer:false,account:false,pm:false,art:false,eyegreen:false,foregroung:true,elsewhere:false,eyeblue:false,female:true,
+	glasses:false,
+	mustache:false,
+	earrings:true,
+	beard:false,
+	smile:false,blonde:false,brown:false,red:true,black:false,bald:false}
+},
+{
+	agency:"@HealthwareInternational",surname:"Fulgheri",role:"",
+name:"Alessandro",
+	picture:"assets/images/profiles/60_alessandro.jpg",
+	profile:{
+	grey:true,strategy:true,content:false,finance:false,developer:false,account:false,pm:false,art:false,eyegreen:false,foregroung:true,elsewhere:false,eyeblue:false,female:false,
+	glasses:true,
+	mustache:true,
+	earrings:false,
+	beard:true,
+	smile:false,blonde:false,brown:false,red:false,black:false,bald:false}
+},
+{
+	agency:"@HealthwareInternational",surname:"Salvemini",role:"",
+name:"Francesca",
+	picture:"assets/images/profiles/61_francesca.jpg",
+	profile:{
+	grey:false,strategy:false,content:false,finance:false,developer:false,account:true,pm:false,art:false,eyegreen:true,foregroung:true,elsewhere:true,eyeblue:false,female:true,
+	glasses:false,
+	mustache:false,
+	earrings:false,
+	beard:false,
+	smile:false,blonde:false,brown:false,red:false,black:true,bald:false}
+},
+{
+	agency:"@HealthwareInternational",surname:"Tovo",role:"",
+name:"Monica",
+	picture:"assets/images/profiles/62_monica.jpg",
+	profile:{
+	grey:false,strategy:false,content:false,finance:false,developer:false,account:true,pm:false,art:false,eyegreen:false,foregroung:false,elsewhere:false,eyeblue:false,female:true,
+	glasses:false,
+	mustache:false,
+	earrings:true,
+	beard:false,
+	smile:true,blonde:false,brown:true,red:false,black:false,bald:false}
+},
+{
+	agency:"@HealthwareInternational",surname:"Lattanzio",role:"",
+name:"Teo",
+	picture:"assets/images/profiles/63_teo.jpg",
+	profile:{
+	grey:false,strategy:false,content:false,finance:false,developer:false,account:true,pm:false,art:false,eyegreen:false,foregroung:true,elsewhere:false,eyeblue:false,female:false,
+	glasses:true,
+	mustache:false,
+	earrings:true,
+	beard:false,
+	smile:true,blonde:false,brown:false,red:false,black:false,bald:true}
+},
+{
+	agency:"@HealthwareInternational",surname:"Pattini",role:"Client Service Director",
+name:"Patrizia",
+	picture:"assets/images/profiles/64_patrizia.jpg",
+	profile:{
+	grey:false,strategy:false,content:false,finance:false,developer:false,account:true,pm:false,art:false,eyegreen:false,foregroung:false,elsewhere:false,eyeblue:true,female:true,
+	glasses:false,
+	mustache:false,
+	earrings:true,
+	beard:false,
+	smile:false,blonde:true,brown:false,red:false,black:false,bald:false}
+},
+{
+	agency:"@HealthwareInternational",surname:"Alexandre",role:"",
+name:"Valerie",
+	picture:"assets/images/profiles/65_valerie.jpg",
+	profile:{
+	grey:false,strategy:false,content:false,finance:false,developer:false,account:true,pm:false,art:false,eyegreen:false,foregroung:true,elsewhere:false,eyeblue:false,female:true,
+	glasses:true,
+	mustache:false,
+	earrings:false,
+	beard:false,
+	smile:true,blonde:false,brown:false,red:false,black:true,bald:false}
+}
+];
+
+var questions = [
+
+{female:"Is your character a woman?"},
+
+{blonde:"Does your character have blonde hair?"},
+{brown:"Does your character have brown hair?"},
+{red:"Does your character have red hair?"},
+{black:"Does your character have black hair?"},
+{grey:"Does your character have grey hair?"}, //new
+{bald:"Is your character bald?"},
+
+{mustache:"Does your character have a mustache?"},
+{beard:"Does your character have a beard?"},
+
+{smile:"Does your character have a bright smile?"},
+{glasses:"Is your character wearing glasses?"},
+{earrings:"Is your character wearing earrings?"},
+
+{eyegreen:"Does your character have green eyes?"},
+{eyeblue:"Does your character have blue eyes?"},
+{elsewhere:"Is your character looking elsewhere?"},
+{foregroung:"Is your character close up?"},
+
+//roles
+{developer:"Is your character a developer?"},
+{account:"Is your character an account?"},
+{pm:"Is your character a pm or delivery?"},
+{art:"Is your character a creative?"},
+{finance:"Is your character a finance?"},//new
+{content:"Is your character a content manager?"},//new
+{strategy:"Is your character a strategist?"}, //new
+
+];
+
+var excludes = {
+eyegreen:["eyeblue"],	
+eyeblue:["eyegreen"],	
+female:["bald","beard","mustache"],
+
+red:["blonde","brown","black","bald","grey"],
+blonde:["red","brown","black","bald","grey"],
+brown:["blonde","red","black","bald","grey"],	
+black:["blonde","red","brown","bald","grey"],
+grey:["blonde","red","brown","black","bald"],
+
+mustache:["female"],
+beard:["female"],
+bald:["female","red","blonde","brown","black","grey"],
+
+developer:["account","pm","art","finance","content","strategy"],
+account:["pm","art","developer","finance","content","strategy"],
+pm:["account","art","developer","finance","content","strategy"],
+art:["account","pm","developer","finance","content","strategy"],
+finance:["art","account","pm","developer","content","strategy"],
+content:["art","account","pm","developer","finance","strategy"],
+strategy:["art","account","pm","developer","finance","content"],
+	}
+	
+	
+HIpositions=[
+[000,000],[50,000],[100,000],[150,000],[200,000],[250,000],[300,000],[350,000],[400,000],[450,000],[500,000],[550,000],[600,000],[650,000],[700,000],[750,000],
+[000,50],[50,50],[100,50],[150,50],[200,50],[250,50],[300,50],[350,50],[400,50],[450,50],[500,50],[550,50],[600,50],[650,50],[700,50],[750,50],
+[000,100],[50,100],[100,100],[150,100],[600,100],[650,100],[700,100],[750,100],
+[000,150],[50,150],[100,150],[150,150],[600,150],[650,150],[700,150],[750,150],
+[000,200],[50,200],[100,200],[150,200],[600,200],[650,200],[700,200],[750,200],
+[000,250],[50,250],[100,250],[150,250],[600,250],[650,250],[700,250],[750,250],
+[000,300],[50,300],[100,300],[150,300],[600,300],[650,300],[700,300],[750,300],
+[000,350],[50,350],[100,350],[150,350],[600,350],[650,350],[700,350],[750,350],
+[000,400],[50,400],[100,400],[150,400],[600,400],[650,400],[700,400],[750,400],
+[000,450],[50,450],[100,450],[150,450],[600,450],[650,450],[700,450],[750,450],
+[000,500],[50,500],[100,500],[150,500],[200,500],[250,500],[300,500],[350,500],[400,500],[450,500],[500,500],[550,500],[600,500],[650,500],[700,500],[750,500],
+[000,550],[50,550],[100,550],[150,550],[200,550],[250,550],[300,550],[350,550],[400,550],[450,550],[500,550],[550,550],[600,550],[650,550],[700,550],[750,550]
+]
